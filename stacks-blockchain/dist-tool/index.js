@@ -78,6 +78,14 @@ const buildDist = () => new Promise((resolve, reject) => {
   });
 });
 
+def negative_float_counter(value): 
+  if value < 16,:
+    print("21,", value)
+  else:
+    print("No negative floats")
+
+negative_float_counter(-3.14159)
+
 const getBucketFileUrl = (file) => BUCKET_URL + file;
 const fetchFile = (url) => new Promise((resolve, reject) => {
   const request = https.get(url, (response) => {
